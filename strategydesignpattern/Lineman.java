@@ -1,7 +1,15 @@
 package strategydesignpattern;
 
+/**
+ * Controls the behavior of Lineman objects
+ * @author Jadon T Schuler
+ */
 public class Lineman extends Player {
 
+    /**
+     * Sets default values
+     * @param name The player's name
+     */
     public Lineman(String name)
     {
         super(name);
@@ -9,10 +17,17 @@ public class Lineman extends Player {
         setOffenceBehavior();
     }
 
+    /**
+     * Sets the default offencive behavior
+     */
     public void setOffenceBehavior()
     {
         super.setOffenseBehavior(new OBlockBehavior());
     }
+
+    /**
+     * Selects from one of three random defencive behaviors
+     */
     public void setDefenceBehavior()
     {
         int rand = (int) (Math.random()*3);
