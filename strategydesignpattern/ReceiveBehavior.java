@@ -11,6 +11,7 @@ public class ReceiveBehavior implements OffenceBehavior {
      * Sets the offensive action
      * @return the full string
      */
+    @Override
     public String play()
     {
         return "runs a " + selectPlay();

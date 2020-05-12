@@ -11,6 +11,7 @@ public class BlockBehavior implements DefenceBehavior {
      * Returns a random play
      * @return selects a random play and returns the full string
      */
+    @Override
     public String play()
     {
         return "blocks a " + selectPlay();

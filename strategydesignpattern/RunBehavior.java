@@ -11,6 +11,7 @@ public class RunBehavior implements OffenceBehavior {
      * Defines the behavior
      * @return the string of the chosen action
      */
+    @Override
     public String play()
     {
         return "runs a " + selectPlay();

@@ -11,6 +11,7 @@ public class PassBehavior implements OffenceBehavior {
      * Returns a random play
      * @return returns the full string
      */
+    @Override
     public String play()
     {
         return "throws a " + selectPlay();
