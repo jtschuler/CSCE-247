@@ -18,6 +18,7 @@ public class Golfer implements Subject {
      */
     public Golfer(String name) {
         this.name = name;
+        observers = new ArrayList<Observer>();
         strokes = 0;
         par = 0;
     }
