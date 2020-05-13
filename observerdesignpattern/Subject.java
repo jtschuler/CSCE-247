@@ -2,6 +2,7 @@ package observerdesignpattern;
 
 /**
  * Interface for subjects
+ * @author Jadon T Schuler
  */
 public interface Subject {
     /**
