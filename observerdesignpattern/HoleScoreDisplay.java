@@ -6,6 +6,8 @@ package observerdesignpattern;
  */
 public class HoleScoreDisplay implements Observer {
     private Subject golfer;
+    private int strokes;
+    private int par;
 
     /**
      * Constructor
@@ -24,15 +26,15 @@ public class HoleScoreDisplay implements Observer {
      */
     @Override
     public void update(int strokes, int par) {
-        displayHoleScore(strokes, par);
+        this.strokes = strokes;
+        this.par = par;
+        displayHoleScore();
     }
 
     /**
      * Sends current hole data as output
-     * @param strokes number of strokes this hole
-     * @param par par for this hole
      */
-    private void displayHoleScore(int strokes, int par)
+    private void displayHoleScore()
     {
         int difference = Math.abs(strokes - par);
 

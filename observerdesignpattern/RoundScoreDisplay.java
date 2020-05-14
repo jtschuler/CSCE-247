@@ -6,19 +6,18 @@ package observerdesignpattern;
  */
 public class RoundScoreDisplay implements Observer {
     private Subject golfer;
-    private int strokes;
-    private int par;
+    private int strokesTotal;
+    private int parTotal;
 
     /**
      * Constructor
-     *
      * @param golfer the subject to be observed
      */
     public RoundScoreDisplay(Golfer golfer) {
         this.golfer = golfer;
         golfer.registerObserver(this);
-        strokes = 0;
-        par = 0;
+        strokesTotal = 0;
+        parTotal = 0;
     }
 
     /**
@@ -28,8 +27,8 @@ public class RoundScoreDisplay implements Observer {
      */
     @Override
     public void update(int strokes, int par) {
-        this.strokes += strokes;
-        this.par += par;
+        this.strokesTotal += strokes;
+        this.parTotal += par;
         displayRoundScore();
     }
 
@@ -38,18 +37,18 @@ public class RoundScoreDisplay implements Observer {
      */
     private void displayRoundScore()
     {
-        int difference = Math.abs(strokes - par);
+        int difference = Math.abs(strokesTotal - parTotal);
 
         System.out.println();
 
         System.out.println("Current round stats");
-        System.out.println("Par: " + par);
-        System.out.println("Strokes: " + strokes);
+        System.out.println("Par: " + parTotal);
+        System.out.println("Strokes: " + strokesTotal);
 
         // Determines relationship to par and prints data
-        if(strokes < par)
+        if(strokesTotal < parTotal)
             System.out.println(difference + " under par");
-        else if (strokes > par)
+        else if (strokesTotal > parTotal)
             System.out.println(difference + " over par");
         else
             System.out.println("Made par");
