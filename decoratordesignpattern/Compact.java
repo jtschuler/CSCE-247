@@ -10,7 +10,7 @@ public class Compact extends Vehicle {
      * Creates an instance of Compact
      */
     public Compact() {
-        description = "Compact";
+        description = "Compact Car";
     }
 
     /**
