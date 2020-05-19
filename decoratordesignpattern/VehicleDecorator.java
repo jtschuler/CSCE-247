@@ -9,5 +9,6 @@ public abstract class VehicleDecorator extends Vehicle{
      * Append this particular decoration to the car
      * @return the newly modified description string
      */
+    @Override
     public abstract String toString();
 }
