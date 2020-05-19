@@ -17,6 +17,7 @@ public class Compact extends Vehicle {
      * The cost of a compact car without modifications
      * @return the double cost
      */
+    @Override
     public double getCost() {
         return 15000.0;
     }

@@ -17,6 +17,7 @@ public class Sedan extends Vehicle {
      * The cost of a sedan without modifications
      * @return the double cost
      */
+    @Override
     public double getCost() {
         return 20000.0;
     }

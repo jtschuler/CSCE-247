@@ -17,6 +17,7 @@ public class SportsCar extends Vehicle {
      * The cost of a sports car without modifications
      * @return the double cost
      */
+    @Override
     public double getCost() {
         return 30000.0;
     }
