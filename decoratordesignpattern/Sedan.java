@@ -10,7 +10,7 @@ public class Sedan extends Vehicle {
      * Creates an instance of Sedan
      */
     public Sedan() {
-        description = "sedan";
+        description = "Sedan";
     }
 
     /**
