@@ -18,6 +18,7 @@ public abstract class Bike {
         createFrame();
         addWheels();
         addPedals();
+        getPrice();
     }
 
     /**
