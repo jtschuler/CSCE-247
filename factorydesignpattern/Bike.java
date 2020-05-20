@@ -49,7 +49,7 @@ public abstract class Bike {
      * Gets the price of this bike
      * @return price
      */
-    public double getPrice() {
-        return price;
+    public void getPrice() {
+        System.out.println("Price: $" + price);
     }
 }
