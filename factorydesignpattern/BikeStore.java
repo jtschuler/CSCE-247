@@ -3,7 +3,8 @@ package factorydesignpattern;
 public class BikeStore {
     public Bike orderBike(String bikeType) {
         Bike bike = createBike(bikeType);
-        bike.createBike();
+        if (bike != null)
+            bike.createBike();
         return bike;
     }
 
