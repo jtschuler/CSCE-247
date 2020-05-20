@@ -18,7 +18,6 @@ public abstract class Bike {
         createFrame();
         addWheels();
         addPedals();
-        getPrice();
     }
 
     /**
@@ -48,8 +47,9 @@ public abstract class Bike {
 
     /**
      * Gets the price of this bike
+     * @return price
      */
-    public void getPrice() {
-        System.out.println("Price: $" + price);
+    public double getPrice() {
+        return price;
     }
 }
