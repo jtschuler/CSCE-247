@@ -48,7 +48,6 @@ public abstract class Bike {
 
     /**
      * Gets the price of this bike
-     * @return price
      */
     public void getPrice() {
         System.out.println("Price: $" + price);
