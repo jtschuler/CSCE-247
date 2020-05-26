@@ -42,6 +42,6 @@ public class Item {
      */
     @Override
     public String toString() {
-        return "***** " + title + " *****" + "\n" + description + "Price: " + price;
+        return "***** " + title + " *****\n" + description + "\nPrice: " + price;
     }
 }
