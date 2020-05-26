@@ -56,5 +56,8 @@ public class WishList {
      */
     private void growArray() {
         Item[] tmp = new Item[items.length * 2];
+        for(int i = 0; i < items.length; i ++)
+            tmp[i] = items[i];
+        items = tmp;
     }
 }
