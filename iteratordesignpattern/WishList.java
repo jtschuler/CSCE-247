@@ -7,7 +7,7 @@ package iteratordesignpattern;
 public class WishList {
     private String name;
     private Item[] items;
-    int count;
+    private int count;
 
     /**
      * Creates a new wih list
