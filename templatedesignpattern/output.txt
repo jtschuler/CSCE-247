@@ -1,0 +1,37 @@
+**** Let's work ****
+Ted is a brave fire fighter.
+Sandy is a couragous police officer.
+Casey is a weather-proof postman.
+Tim is a strong handyman
+
+Ted: It's time to get out of bed sleepyhead
+Ted: It's time to eat some yummy breakfast
+Ted: It's time to drive to work
+Ted: It's time to water down the fires
+Ted: It's time to drive home, YAY
+Ted: It's time to eat, yum yum yum
+Ted: It's time to go back to bed...zzzzz
+
+Sandy: It's time to get out of bed sleepyhead
+Sandy: It's time to eat some yummy breakfast
+Sandy: It's time to drive to work
+Sandy: It's time to get the bad guys!
+Sandy: It's time to drive home, YAY
+Sandy: It's time to eat, yum yum yum
+Sandy: It's time to go back to bed...zzzzz
+
+Casey: It's time to get out of bed sleepyhead
+Casey: It's time to eat some yummy breakfast
+Casey: It's time to drive to work
+Casey: It's time to deliver the mail
+Casey: It's time to drive home, YAY
+Casey: It's time to eat, yum yum yum
+Casey: It's time to go back to bed...zzzzz
+
+Tim: It's time to get out of bed sleepyhead
+Tim: It's time to eat some yummy breakfast
+Tim: It's time to drive to work
+Tim: It's time to fix stuff
+Tim: It's time to drive home, YAY
+Tim: It's time to eat, yum yum yum
+Tim: It's time to go back to bed...zzzzz
