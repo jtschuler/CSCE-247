@@ -13,7 +13,7 @@ public class Handyman extends Worker {
      */
     public Handyman(String name) {
         super(name);
-        System.out.println(name + " is a strong handyman.");
+        System.out.println(name + " is a strong handyman");
     }
 
     /**

@@ -13,7 +13,7 @@ public class Policeman extends Worker {
      */
     public Policeman(String name) {
         super(name);
-        System.out.println(name + " is a courageous police officer.");
+        System.out.println(name + " is a couragous police officer.");
     }
 
     /**
