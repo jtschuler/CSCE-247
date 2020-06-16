@@ -10,8 +10,17 @@ public class HuluState implements State {
 
     public HuluState(TV tv) {
         this.tv = tv;
+
         movies = new ArrayList<String>();
+        movies.add("Cars");
+        movies.add("WALL-E");
+        movies.add("Cinderella");
+        movies.add("ET");
+
         tvShows = new ArrayList<String>();
+        tvShows.add("Sesame Street");
+        tvShows.add("Care Bears");
+        tvShows.add("Looney Tunes");
     }
 
     /**
@@ -19,19 +28,19 @@ public class HuluState implements State {
      */
     @Override
     public void pressHomeButton() {
-        System.out.println("Loading the home screen...");
+        System.out.println("Loading the home screen...\n");
         tv.setState(tv.getHomeState());
     }
 
     @Override
     public void pressNetflixButton() {
-        System.out.println("Loading Netflix...");
+        System.out.println("Loading Netflix...\n");
         tv.setState(tv.getNetflixState());
     }
 
     @Override
     public void pressHuluButton() {
-        System.out.println("We are already in Hulu");
+        System.out.println("We are already in Hulu\n");
     }
 
     @Override
@@ -54,5 +63,6 @@ public class HuluState implements State {
         for (String s : list) {
             System.out.println("- " + s);
         }
+        System.out.println();
     }
 }

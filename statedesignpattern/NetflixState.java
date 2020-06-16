@@ -10,8 +10,18 @@ public class NetflixState implements State {
 
     public NetflixState(TV tv) {
         this.tv = tv;
+
         movies = new ArrayList<String>();
+        movies.add("The Land Before Time");
+        movies.add("Frozen");
+        movies.add("The Little Mermaid");
+        movies.add("Ice Age");
+
         tvShows = new ArrayList<String>();
+        tvShows.add("Peppa Pig");
+        tvShows.add("My Little Pony");
+        tvShows.add("Garfield");
+        tvShows.add("Teenage Mutant Ninja Turtles");
     }
 
     /**
@@ -19,18 +29,18 @@ public class NetflixState implements State {
      */
     @Override
     public void pressHomeButton() {
-        System.out.println("Loading the home screen...");
+        System.out.println("Loading the home screen...\n");
         tv.setState(tv.getHomeState());
     }
 
     @Override
     public void pressNetflixButton() {
-        System.out.println("We are already in Netflix");
+        System.out.println("We are already in Netflix\n");
     }
 
     @Override
     public void pressHuluButton() {
-        System.out.println("Loading Hulu...");
+        System.out.println("Loading Hulu...\n");
         tv.setState(tv.getHuluState());
     }
 
@@ -54,5 +64,6 @@ public class NetflixState implements State {
         for (String s : list) {
             System.out.println("- " + s);
         }
+        System.out.println();
     }
 }
