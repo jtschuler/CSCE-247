@@ -1,8 +1,5 @@
 package statedesignpattern;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class HomeState implements State {
     private TV tv;
 
