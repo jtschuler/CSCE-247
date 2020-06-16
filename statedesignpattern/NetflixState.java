@@ -1,10 +1,17 @@
 package statedesignpattern;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class NetflixState implements State {
     private TV tv;
+    private List<String> movies;
+    private List<String> tvShows;
 
     public NetflixState(TV tv) {
         this.tv = tv;
+        movies = new ArrayList<String>();
+        tvShows = new ArrayList<String>();
     }
 
     /**
@@ -12,26 +19,40 @@ public class NetflixState implements State {
      */
     @Override
     public void pressHomeButton() {
-
+        System.out.println("Loading the home screen...");
+        tv.setState(tv.getHomeState());
     }
 
     @Override
     public void pressNetflixButton() {
-
+        System.out.println("We are already in Netflix");
     }
 
     @Override
     public void pressHuluButton() {
-
+        System.out.println("Loading Hulu...");
+        tv.setState(tv.getHuluState());
     }
 
     @Override
     public void pressMovieButton() {
-
+        System.out.println("Netflix Movies:");
+        displayOptions(movies);
     }
 
     @Override
     public void pressTVButton() {
+        System.out.println("Netflix TV Shows:");
+        displayOptions(tvShows);
+    }
 
+    /**
+     * Private helper to display a list of strings
+     * @param list the list to be displayed
+     */
+    private void displayOptions(List<String> list) {
+        for (String s : list) {
+            System.out.println("- " + s);
+        }
     }
 }

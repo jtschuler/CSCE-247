@@ -10,12 +10,14 @@ public class TV {
     private State huluState;
 
     /**
-     * Creates a new TV object and instantiates its state objects
+     * Creates a new TV object and instantiates its state objects, and sets the current state to home
      */
     public TV() {
         homeState = new HomeState(this);
         netflixState = new NetflixState(this);
         huluState = new HuluState(this);
+
+        state = homeState;
     }
 
     /**
@@ -41,13 +43,13 @@ public class TV {
         return huluState;
     }
 
+    /**
+     * Each method calls the relevant button in the current state
+     */
     public void pressHomeButton() {
         state.pressHomeButton();
     }
 
-    /**
-     * Each method calls the relevant button in the current state
-     */
     public void pressNetflixButton() {
         state.pressNetflixButton();
     }
